@@ -72,7 +72,7 @@ var QueryParser = function () {
         newCombName = nodeName;
       } else if (element.value && element.value.field) {
         var newRule = {
-          field: element.value.field,
+          field: element.value.field.toUpperCase(),
           operator: element.value.operator,
           value: element.value.value,
           nodeName: nodeName

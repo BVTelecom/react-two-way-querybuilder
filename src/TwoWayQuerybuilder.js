@@ -67,8 +67,6 @@ class TwoWayQuerybuilder extends React.Component {
   }
 
   handleChange(data) {
-    console.log('inside of two way query builder handling change');
-    debugger;
     const queryObj = {};
     queryObj.data = data;
     queryObj.query = QueryParser.parseToQuery(data);
